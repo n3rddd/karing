@@ -16,13 +16,14 @@ typedef struct {
   GObjectClass parent_class;
 } FlutterInappwebviewLinuxPluginClass;
 
-#define FLUTTER_INAPPWEBVIEW_LINUX_PLUGIN(obj) \
-  (G_TYPE_CHECK_INSTANCE_CAST((obj), \
+#define FLUTTER_INAPPWEBVIEW_LINUX_PLUGIN(obj)                              \
+  (G_TYPE_CHECK_INSTANCE_CAST((obj),                                        \
                               flutter_inappwebview_linux_plugin_get_type(), \
                               FlutterInappwebviewLinuxPlugin))
 
 FLUTTER_PLUGIN_EXPORT GType flutter_inappwebview_linux_plugin_get_type();
-FLUTTER_PLUGIN_EXPORT void flutter_inappwebview_linux_plugin_register_with_registrar(
+FLUTTER_PLUGIN_EXPORT void
+flutter_inappwebview_linux_plugin_register_with_registrar(
     FlPluginRegistrar* registrar);
 
 G_END_DECLS

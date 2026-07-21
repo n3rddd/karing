@@ -16,9 +16,8 @@ static void flutter_inappwebview_linux_plugin_init(
 
 void flutter_inappwebview_linux_plugin_register_with_registrar(
     FlPluginRegistrar* registrar) {
-  FlutterInappwebviewLinuxPlugin* plugin =
-      FLUTTER_INAPPWEBVIEW_LINUX_PLUGIN(
-          g_object_new(flutter_inappwebview_linux_plugin_get_type(), nullptr));
+  FlutterInappwebviewLinuxPlugin* plugin = FLUTTER_INAPPWEBVIEW_LINUX_PLUGIN(
+      g_object_new(flutter_inappwebview_linux_plugin_get_type(), nullptr));
 
   g_object_unref(plugin);
 }
